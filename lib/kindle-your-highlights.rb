@@ -1,5 +1,4 @@
 require 'rubygems'
-require 'mechanize'
 require 'nokogiri'
 require 'erb'
 require 'date'
@@ -19,10 +18,10 @@ class KindleYourHighlights
 
     @block = block
 
-    scrape_highlights
+    scrape_highlights(file)
   end
 
-  def scrape_highlights
+  def scrape_highlights(file)
     highlights_page = Nokogiri::HTML(open(file))
 
     @books = []
