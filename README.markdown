@@ -1,13 +1,20 @@
 kindle-your-highlights
 ============
-It scrapes highlights from kinde.amazon.com web site (https://kindle.amazon.com/your_highlights).
+Scrapes highlights from a fully-loaded & downloaded html file from the
+"My Highlights" section of kindle.amazon.com.
+
+The original gem (from which this is forked) scraped directly from
+kindle.amazon.com, but the My Highlights page is now infinite scroll,
+	which I believe Mechanize is unable to handle.
+
+Amazon needs to make an API!! This is far from the ideal solution.
 
 ## How to install the gem
 Build the gem with
-	gem build kindle-your-highlights.gemspec
+```gem build kindle-your-highlights.gemspec```
 
 Then
-	gem install kindle-your-highlights
+```gem install kindle-your-highlights```
 
 
 ## Required Gems
