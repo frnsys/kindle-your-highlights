@@ -54,8 +54,7 @@ default task is "rake update:recent"
 
 	require 'kindle-your-highlights'
 
-	# to create a new KindleYourHighlights object, pass in the filepath of
-your file. 
+	# to create a new KindleYourHighlights object, pass in the filepath of your file. 
 	kindle = KindleYourHighlights.new("/Users/foo/highlights.html")
 	
 	kindle.highlights.each do |highlight|
