@@ -2,6 +2,14 @@ kindle-your-highlights
 ============
 It scrapes highlights from kinde.amazon.com web site (https://kindle.amazon.com/your_highlights).
 
+## How to install the gem
+Build the gem with
+	gem build kindle-your-highlights.gemspec
+
+Then
+	gem install kindle-your-highlights
+
+
 ## Required Gems
 
 * Mechanize
